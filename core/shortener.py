@@ -1,7 +1,8 @@
 import pyshorteners
+from django.conf import settings
 
 
-APIKEY = "021e5f275c2efccff85d477232a6d577978a1f05"
+APIKEY = settings.BITLY_API_TOKEN
 
 # write pyshortener
 
