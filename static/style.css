@@ -1,6 +1,29 @@
+@media (max-width: 600px) {
+
+    body {
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .card {
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+
 body {
     background: whitesmoke;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -41,7 +64,7 @@ body {
 }
 
 .card p {
-    padding-top: 20px;
+    /* padding-top: 20px;  */
     width: 60%;
     height: 50px;
     border: 0.5px solid grey;
@@ -50,4 +73,21 @@ body {
 
 .card p span {
     background: lightgrey;
+}
+
+.output {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    width: 60%;
+}
+
+.output button {
+    background: lightgrey;
+    border-radius: 0;
+    padding-left: 10px;
+    color: black;
+    border: grey 1px solid;
+    cursor: pointer;
+
 }
